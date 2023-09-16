@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="output.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-sky-950">
+<body class="bg-sky-950 h-full">
     <div class="grid place-content-center h-screen mx-4">
-        <div class="bg-green-900 rounded-lg" style="background-image: url('./src/Shwetu-love-tree.png'); background-size: cover; background-repeat: no-repeat; background-color: transparent;">
+        <div class="rounded-lg" style="background-image: url('./src/Shwetu-love-tree.png'); background-size: cover; background-repeat: no-repeat; background-color: transparent;">
 
             <div class="flex items-center profile w-full bg-slate-900 space-x-2 p-4 rounded-lg">
                 <i class="fa-solid fa-arrow-left text-white text-xl"></i>
@@ -26,51 +26,132 @@
                 </div>
             </div>
             
-            <div class="chats">
-                <p class="text-black text-right p-2">
-                    <span class="bg-green-200 px-2 py-1 rounded-lg">Hello</span>
-                </p>
-                <p class="text-black text-left p-2">
-                    <span class="bg-green-200 px-2 py-1 rounded-lg">Haan</span>
-                </p>
-                <p class="text-black text-right p-2">
-                    <span class="bg-green-200 px-2 py-1 rounded-lg">Kaise ho ?</span>
-                </p>
-                <p class="text-black text-left p-2">
-                    <span class="bg-green-200 px-2 py-1 rounded-lg">Ek dum mst</span>
-                </p>
-                <p class="text-black text-left p-2">
-                    <span class="bg-green-200 px-2 py-1 rounded-lg">Apna batao</span>
-                </p>
-                <p class="text-black text-right p-2">
-                    <span class="bg-green-200 px-2 py-1 rounded-lg">Apna bhi mst hai</span>
-                </p>
-                <p class="text-black text-left p-2">
-                    <span class="bg-green-200 px-2 py-1 rounded-lg">Our Batao</span>
-                </p>
-
-                <p class="text-black text-right p-2">
-                    <span class="bg-green-200 px-3 py-2 rounded-lg">Aur kya batu</span>
-                </p>
-                <p class="text-black text-right p-2">
-                    <span class="bg-green-200 px-3 py-2 rounded-lg">Badi badi dunia, chote</span>
-                </p>
-                <p class="text-black text-right p-2">
-                    <span class="bg-green-200 px-3 py-2 rounded-lg">Chote raste.. ham bas jee</span>
-                </p>
-                <p class="text-black text-right p-2">
-                    <span class="bg-green-200 px-2 py-2 rounded-lg">Rahe hai aapke waste <i class="fa-solid fa-face-grin-hearts text-yellow-400"></i></span>
-                </p>
-
-                <p class="text-black text-left p-2">
-                    <span class="bg-green-200 px-2 py-1 rounded-lg">Chal pagla</span>
-                </p>
-                <p class="text-black text-right p-2">
-                    <span class="bg-green-200 px-2 py-1 rounded-lg">Haan <i class="fa-solid fa-face-smile text-yellow-400"></i></span>
-                </p>
-                <p class="text-black text-left p-2">
-                    <span class="bg-green-200 px-2 py-1 rounded-lg">Pagal</span>
-                </p>
+            <!-- Chat section -->
+            <div class="h-[75vh] overflow-y-auto">
+                <div class="chats">
+                    <p class="text-black text-right p-2">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Hello</span>
+                    </p>
+                    <p class="text-black text-left p-2">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Haan</span>
+                    </p>
+                    <p class="text-black text-right p-2">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Kaise ho ?</span>
+                    </p>
+                    <p class="text-black text-left p-2">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Ek dum mst</span>
+                    </p>
+                    <p class="text-black text-left p-2">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Apna batao</span>
+                    </p>
+                    <p class="text-black text-right p-2">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Apna bhi mst hai</span>
+                    </p>
+                    <p class="text-black text-left p-2">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Our Batao</span>
+                    </p>
+                    <!-- jee rahe hai aapke waste -->
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-3 py-2 rounded-lg">Aur kya batu</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-3 py-2 rounded-lg">Badi badi dunia, chote</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Chote raste.. ham bas jee</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Rahe hai aapke waste <i class="fa-solid fa-face-grin-hearts text-yellow-400"></i></span>
+                    </p>
+                    <p class="text-black text-left p-1.5">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Chal pagla</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Haan <i class="fa-solid fa-face-smile text-yellow-400"></i></span>
+                    </p>
+                    <p class="text-black text-left p-1.5">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Pagal</span>
+                    </p>
+                    <p class="text-black text-right p-2">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Haan</span>
+                    </p>
+                    <!-- Heer -->
+                    <p class="text-black text-left p-2">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Aur aage</span>
+                    </p>
+                    <p class="text-black text-right p-2">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Aage kyaa</span>
+                    </p>
+                    <p class="text-black text-left p-2">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Tum janoo</span>
+                    </p>
+                    <p class="text-black text-right p-2">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Sunno</span>
+                    </p>
+                    <p class="text-black text-left p-2">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Haan</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Chand taaron ka toh pata nhi</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Lekin tere liye samose ke saath</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Teri pasandeeda chutney zarur khilaunga</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Tujhe kuch kehne me</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Jhijhak hogi toh tere dil ki</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Awaaz banjaunga</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Tu haan toh kar</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Mein teri rooh mein bhi samajaunga</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Kaam mein tera haath zarur bataunga</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Tu subha ki coffee banayegi</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Toh shaam ki chai mein banaunga</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Tu mujhe apni kahaniya sunana</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Mein tere liye apne geet gaunga</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Tu meri heer toh banja</span>
+                    </p>
+                    <p class="text-black text-right p-1.5">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Mein tera ranjha banjaunga</span>
+                    </p>
+                    <p class="text-black text-left p-2">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Kon sa naasa kiya beta</span>
+                    </p>
+                    <p class="text-black text-right p-2">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Hai koi ek uska hi</span>
+                    </p>
+                    <p class="text-black text-left p-2">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Aacha</span>
+                    </p>
+                    <p class="text-black text-right p-2">
+                        <span class="bg-green-200 px-2 py-2 rounded-lg">Haan</span>
+                    </p>
+                    <p class="text-black text-left p-2">
+                        <span class="bg-green-200 px-2 py-1 rounded-lg">Hmm</span>
+                    </p>
+                </div>
             </div>
         
         </div>
