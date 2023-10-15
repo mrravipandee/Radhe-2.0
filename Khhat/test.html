@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Buttons</title>
+</head>
+<body>
+  <div id="button-container"></div>
+
+  <script>
+    // Sample array of objects with 'title' property
+    const objectArray = [
+      { title: "Button 1 🚀" },
+      { title: "Button 2" },
+      { title: "Button 3" },
+      { title: "Button 4" },
+      // Add more objects as needed
+    ];
+
+    // Get the container element
+    const buttonContainer = document.getElementById("button-container");
+
+    // Function to create buttons and display them automatically
+    function displayButtons() {
+      objectArray.forEach(obj => {
+        // Create a button element
+        const button = document.createElement("button");
+
+        // Set the button text to the 'title' property of the current object
+        button.textContent = obj.title;
+
+        // Add a click event listener (optional)
+        button.addEventListener("click", () => {
+          alert(`Button ${obj.title} clicked!`);
+        });
+
+        // Insert the button at the beginning of the container
+        buttonContainer.insertBefore(button, buttonContainer.firstChild);
+
+        // Optionally, you can add some styling to the button
+        button.style.marginRight = "10px";
+      });
+    }
+
+    // Call the function to display buttons automatically
+    displayButtons();
+  </script>
+</body>
+</html>
